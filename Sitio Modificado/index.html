@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CatrachoGo – Agencia de turismo hondureña. Conocé la historia de la Gran Muralla China y viajá desde Honduras: vuelos, hospedaje, tours guiados y precios en Lempiras." />
+  <title>CatrachoGo | Viaje a la Gran Muralla China desde Honduras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVEGACIÓN POR CATEGORÍAS ===================== -->
+  <nav id="main-nav" aria-label="Navegación principal">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo" aria-label="CatrachoGo inicio">
+        <span class="logo__icon"><i class="ri-compass-3-fill"></i></span>
+        Catracho<span>Go</span>
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <button class="nav__toggle" type="button" aria-expanded="false">Conocé la Muralla <i class="ri-arrow-down-s-line"></i></button>
+          <ul class="nav__drop">
+            <li><a href="#historia"><i class="ri-book-open-line"></i><span>Historia<small>2,700 años en una línea de tiempo</small></span></a></li>
+            <li><a href="#construccion"><i class="ri-hammer-line"></i><span>Cómo se construyó<small>Materiales y técnicas</small></span></a></li>
+            <li><a href="#videos"><i class="ri-movie-2-line"></i><span>Videos<small>Se reproducen aquí mismo</small></span></a></li>
+            <li><a href="#galeria"><i class="ri-image-2-line"></i><span>Galería de fotos<small>Por categorías</small></span></a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <button class="nav__toggle" type="button" aria-expanded="false">Planificá tu viaje <i class="ri-arrow-down-s-line"></i></button>
+          <ul class="nav__drop">
+            <li><a href="#secciones"><i class="ri-map-pin-line"></i><span>Secciones de la Muralla<small>Tours de día</small></span></a></li>
+            <li><a href="#comparativa"><i class="ri-table-line"></i><span>Comparativa<small>Dificultad, distancia y precio</small></span></a></li>
+            <li><a href="#paquetes"><i class="ri-suitcase-3-line"></i><span>Paquetes todo incluido<small>Honduras – Beijing</small></span></a></li>
+            <li><a href="#hospedaje"><i class="ri-hotel-bed-line"></i><span>Hospedaje<small>Precios por noche</small></span></a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <button class="nav__toggle" type="button" aria-expanded="false">Reservá <i class="ri-arrow-down-s-line"></i></button>
+          <ul class="nav__drop">
+            <li><a href="#reservar"><i class="ri-calculator-line"></i><span>Cotizador y reserva<small>Precio al instante en Lempiras</small></span></a></li>
+            <li><a href="#consultar"><i class="ri-search-eye-line"></i><span>Consultar mi reserva<small>Con tu código CG-</small></span></a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <button class="nav__toggle" type="button" aria-expanded="false">Ayuda <i class="ri-arrow-down-s-line"></i></button>
+          <ul class="nav__drop">
+            <li><a href="#nosotros"><i class="ri-team-line"></i><span>¿Por qué CatrachoGo?<small>Quiénes somos</small></span></a></li>
+            <li><a href="#testimonios"><i class="ri-chat-heart-line"></i><span>Testimonios<small>Catrachos en la Muralla</small></span></a></li>
+            <li><a href="#faq"><i class="ri-question-line"></i><span>Preguntas frecuentes<small>Visa, clima, pagos</small></span></a></li>
+            <li><a href="#contacto"><i class="ri-phone-line"></i><span>Contacto<small>Teléfono, WhatsApp, correo</small></span></a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <a href="#reservar" class="btn btn--gold nav__cta">Cotizar viaje <i class="ri-arrow-right-up-line"></i></a>
+      <button id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu"><i class="ri-menu-line"></i></button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header id="inicio" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content reveal">
+        <span class="hero__tag"><i class="ri-map-pin-2-fill"></i> Beijing, China · Patrimonio de la Humanidad UNESCO</span>
+        <h1>De Honduras a la <em>Gran Muralla China</em></h1>
+        <p class="hero__text">21,196 km de historia, torres de vigilancia sobre montañas infinitas y atardeceres de leyenda. Te llevamos desde Tegucigalpa o San Pedro Sula con vuelos, hotel, guía en español y todo pagado en Lempiras.</p>
+        <div class="hero__btns">
+          <a href="#historia" class="btn"><i class="ri-book-open-line"></i> Conocé su historia</a>
+          <a href="#videos" class="btn btn--ghost"><i class="ri-play-circle-fill"></i> Ver videos</a>
+        </div>
+        <div class="hero__chips">
+          <span><i class="ri-plane-fill"></i> Vuelos desde TGU / SAP</span>
+          <span><i class="ri-translate-2"></i> Guía en español</span>
+          <span><i class="ri-shield-check-fill"></i> Seguro incluido</span>
+        </div>
+      </div>
+
+      <form class="search-card reveal" id="quick-search">
+        <h3>Cotizá en segundos</h3>
+        <p>Elegí la sección de la Muralla y te armamos el viaje.</p>
+        <div class="price-from"><small>Paquetes desde</small><strong>L 79,900</strong><small>/ persona</small></div>
+        <div class="field">
+          <label for="quick-tour"><i class="ri-map-pin-line"></i> Sección de la Muralla</label>
+          <select id="quick-tour"></select>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="quick-fecha"><i class="ri-calendar-line"></i> Salida</label>
+            <input type="date" id="quick-fecha" />
+          </div>
+          <div class="field">
+            <label for="quick-personas"><i class="ri-user-line"></i> Viajeros</label>
+            <input type="number" id="quick-personas" min="1" max="20" value="2" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn--full"><i class="ri-search-line"></i> Cotizar ahora</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- ===================== ESTADÍSTICAS ===================== -->
+  <section class="stats" aria-label="Datos de la Muralla">
+    <div class="container stats__grid">
+      <div class="reveal"><h4>21,196 km</h4><p>de longitud total</p></div>
+      <div class="reveal"><h4>+2,700 años</h4><p>de historia</p></div>
+      <div class="reveal"><h4>6</h4><p>secciones que visitamos</p></div>
+      <div class="reveal"><h4>8.5 ★</h4><p>calificación de viajeros catrachos</p></div>
+    </div>
+  </section>
+
+  <!-- ===================== ÍNDICE: TODO CLASIFICADO ===================== -->
+  <section class="section" id="indice" aria-labelledby="indice-title">
+    <div class="container center">
+      <span class="eyebrow">Todo en un solo lugar</span>
+      <h2 class="title" id="indice-title">¿Qué querés <em>ver primero</em>?</h2>
+      <p class="lead">Organizamos toda la información en cuatro categorías. Tocá cualquier tema para ir directo.</p>
+    </div>
+    <div class="container index-grid">
+      <article class="index-card reveal">
+        <span class="index-card__num">01</span>
+        <span class="index-card__icon"><i class="ri-ancient-gate-line"></i></span>
+        <h3>Conocé la Muralla</h3>
+        <p>Su historia, cómo se construyó, videos y fotos para enamorarte antes de ir.</p>
+        <ul><li><a href="#historia">Historia</a></li><li><a href="#construccion">Construcción</a></li><li><a href="#videos">Videos</a></li><li><a href="#galeria">Galería</a></li></ul>
+      </article>
+      <article class="index-card reveal">
+        <span class="index-card__num">02</span>
+        <span class="index-card__icon"><i class="ri-map-2-line"></i></span>
+        <h3>Planificá tu viaje</h3>
+        <p>Elegí la sección de la Muralla, compará opciones, paquetes y dónde dormir.</p>
+        <ul><li><a href="#secciones">Secciones</a></li><li><a href="#comparativa">Comparativa</a></li><li><a href="#paquetes">Paquetes</a></li><li><a href="#hospedaje">Hospedaje</a></li></ul>
+      </article>
+      <article class="index-card reveal">
+        <span class="index-card__num">03</span>
+        <span class="index-card__icon"><i class="ri-calendar-check-line"></i></span>
+        <h3>Reservá</h3>
+        <p>Calculá el costo exacto en Lempiras y enviá tu solicitud en minutos.</p>
+        <ul><li><a href="#reservar">Cotizador</a></li><li><a href="#consultar">Consultar reserva</a></li></ul>
+      </article>
+      <article class="index-card reveal">
+        <span class="index-card__num">04</span>
+        <span class="index-card__icon"><i class="ri-customer-service-2-line"></i></span>
+        <h3>Ayuda</h3>
+        <p>Quiénes somos, qué dicen otros viajeros y respuestas a tus dudas.</p>
+        <ul><li><a href="#nosotros">Nosotros</a></li><li><a href="#testimonios">Testimonios</a></li><li><a href="#faq">Preguntas</a></li><li><a href="#contacto">Contacto</a></li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ######################################################################
+       CATEGORÍA 01 · CONOCÉ LA MURALLA
+       ###################################################################### -->
+  <div class="chapter" style="background-image:url('https://sspark.genspark.ai/i/r9vA7Le4fQplCi00?width=1600')">
+    <div class="container">
+      <span class="chapter__num"><b>01</b> Categoría</span>
+      <h2>Conocé la <em>Muralla</em></h2>
+      <p>Antes de caminarla, conocé quién la levantó, por qué y cómo. Historia, ingeniería, videos y fotos.</p>
+      <nav class="chapter__links" aria-label="Temas de Conocé la Muralla">
+        <a href="#historia"><i class="ri-book-open-line"></i> Historia</a>
+        <a href="#construccion"><i class="ri-hammer-line"></i> Cómo se construyó</a>
+        <a href="#videos"><i class="ri-movie-2-line"></i> Videos</a>
+        <a href="#galeria"><i class="ri-image-2-line"></i> Galería</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== HISTORIA ===== -->
+  <section class="section section--white" id="historia" aria-labelledby="historia-title">
+    <div class="container history-intro">
+      <figure class="history-intro__img reveal">
+        <span class="history-intro__badge"><strong>1987</strong><small>Patrimonio UNESCO</small></span>
+        <img src="https://sspark.genspark.ai/i/sTP9H6SALll8STio?width=1200" alt="Ilustración histórica de miles de obreros construyendo la Gran Muralla con andamios de madera" loading="lazy" />
+        <figcaption>Ilustración histórica: obreros levantando un tramo de la Muralla.</figcaption>
+      </figure>
+      <div class="reveal">
+        <span class="eyebrow">Breve historia</span>
+        <h2 class="title" id="historia-title">¿Qué es la <em>Gran Muralla</em>?</h2>
+        <p>La Gran Muralla China no es un solo muro: es un <strong>sistema de murallas, torres de vigilancia, fortalezas y pasos fronterizos</strong> construido durante más de dos mil años por distintas dinastías para proteger el norte de China de los pueblos nómadas de las estepas (xiongnu, mongoles y manchúes).</p>
+        <p>Además de defensa, servía para controlar el comercio de la Ruta de la Seda, cobrar impuestos y enviar mensajes con señales de humo de torre en torre: una alarma podía recorrer cientos de kilómetros en pocas horas.</p>
+        <p>Lo que hoy visitamos cerca de Beijing —Mutianyu, Badaling, Jinshanling— es casi todo de la <strong>dinastía Ming (1368–1644)</strong>, la etapa en que se usaron ladrillos y piedra labrada.</p>
+        <div class="fact-row">
+          <div class="fact"><strong>21,196 km</strong><small>sumando todos los tramos</small></div>
+          <div class="fact"><strong>~25,000</strong><small>torres de vigilancia</small></div>
+          <div class="fact"><strong>8 m</strong><small>altura promedio (Ming)</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container center" style="margin-top:4.5rem">
+      <span class="eyebrow">Línea de tiempo</span>
+      <h3 class="title">De muros de tierra a <em>maravilla del mundo</em></h3>
+    </div>
+    <div class="container">
+      <ol class="timeline" id="timeline" aria-label="Línea de tiempo de la Gran Muralla"></ol>
+    </div>
+  </section>
+
+  <!-- ===== CONSTRUCCIÓN ===== -->
+  <section class="section" id="construccion" aria-labelledby="construccion-title">
+    <div class="container center">
+      <span class="eyebrow">Ingeniería antigua</span>
+      <h2 class="title" id="construccion-title">¿Cómo se <em>construyó</em>?</h2>
+      <p class="lead">Sin grúas ni máquinas: solo manos, animales, poleas y mucho ingenio. Los constructores usaban lo que había a su alrededor, por eso cada tramo es distinto.</p>
+    </div>
+    <div class="container build-grid" id="build-grid"></div>
+
+    <div class="container steps">
+      <ol class="steps__list reveal">
+        <li><div><h4>Elegir el terreno</h4><p>Se trazaba sobre las crestas de las montañas para aprovechar la altura natural y ver al enemigo desde lejos.</p></div></li>
+        <li><div><h4>Hacer los cimientos</h4><p>Se cavaba hasta la roca y se colocaban grandes bloques de piedra (hasta 1 tonelada) como base.</p></div></li>
+        <li><div><h4>Levantar los muros</h4><p>En la época Ming se armaban dos paredes de ladrillo y el centro se rellenaba con tierra apisonada y piedras.</p></div></li>
+        <li><div><h4>Subir los materiales</h4><p>Cadenas humanas pasaban ladrillos mano a mano; también se usaban cabras, burros, carretillas y poleas.</p></div></li>
+        <li><div><h4>Unir con mortero de arroz</h4><p>Mezcla de cal con arroz glutinoso (pegajoso): tan resistente que todavía hoy mantiene unidos los ladrillos.</p></div></li>
+        <li><div><h4>Torres y almenas</h4><p>Cada 300–500 m una torre para soldados, armas y señales de humo; arriba, almenas con troneras para disparar flechas.</p></div></li>
+      </ol>
+      <aside class="steps__aside reveal">
+        <figure>
+          <img src="https://sspark.genspark.ai/i/4gTwhk17oTw9jjJC?width=900" alt="Pintura de obreros construyendo la Muralla en la montaña con andamios" loading="lazy" />
+          <figcaption>Ilustración: obreros, andamios de madera y torres ascendiendo la montaña.</figcaption>
+        </figure>
+        <div class="myth">
+          <i class="ri-lightbulb-flash-line"></i>
+          <div><h4>¿Mito o verdad?</h4><p>“Se ve desde el espacio a simple vista” es un <strong>mito</strong>: es muy larga pero angosta (5–8 m) y del color del terreno. Los astronautas lo han confirmado.</p></div>
+        </div>
+        <div class="myth" style="background:var(--red-dark)">
+          <i class="ri-user-heart-line"></i>
+          <div><h4>El costo humano</h4><p>Trabajaron soldados, campesinos y presos: millones de personas a lo largo de los siglos. Por eso se le llama también “el cementerio más largo del mundo”.</p></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS (reproducción local, sin YouTube) ===== -->
+  <section class="section videos" id="videos" aria-labelledby="videos-title">
+    <div class="container">
+      <span class="eyebrow">Videos de la Muralla</span>
+      <h2 class="title" id="videos-title">Mirá la Muralla <em>antes de ir</em></h2>
+      <p class="lead">Los videos se reproducen aquí mismo, sin abrir YouTube ni otra pestaña. Elegí uno de la lista y dale play. También podés descargarlos.</p>
+
+      <div class="player">
+        <div class="player__screen reveal">
+          <video id="main-video" controls playsinline webkit-playsinline preload="metadata"></video>
+          <div class="player__info">
+            <div>
+              <h3 id="video-title">Cargando…</h3>
+              <p id="video-desc"></p>
+            </div>
+            <a id="video-download" class="player__dl" href="#" download><i class="ri-download-2-line"></i> Descargar</a>
+          </div>
+        </div>
+        <ul class="playlist reveal" id="playlist" aria-label="Lista de videos"></ul>
+      </div>
+      <p class="video-note"><i class="ri-information-line"></i><span id="video-credits"></span></p>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section class="section" id="galeria" aria-labelledby="galeria-title">
+    <div class="container center">
+      <span class="eyebrow">Galería de fotos</span>
+      <h2 class="title" id="galeria-title">Cuatro estaciones, <em>mil postales</em></h2>
+      <p class="lead">Filtrá por categoría y tocá una foto para verla en grande.</p>
+      <div class="gallery-filters" id="gallery-filters" role="group" aria-label="Filtrar galería">
+        <button class="filter-btn active" type="button" data-gfilter="todas">Todas</button>
+        <button class="filter-btn" type="button" data-gfilter="paisajes">Paisajes</button>
+        <button class="filter-btn" type="button" data-gfilter="estaciones">Estaciones</button>
+        <button class="filter-btn" type="button" data-gfilter="experiencias">Experiencias</button>
+        <button class="filter-btn" type="button" data-gfilter="historia">Historia</button>
+      </div>
+    </div>
+    <div class="container"><div class="gallery" id="gallery"></div></div>
+  </section>
+
+  <!-- ######################################################################
+       CATEGORÍA 02 · PLANIFICÁ TU VIAJE
+       ###################################################################### -->
+  <div class="chapter" style="background-image:url('https://sspark.genspark.ai/i/CPXGAIORuhg5HTEx?width=1600')">
+    <div class="container">
+      <span class="chapter__num"><b>02</b> Categoría</span>
+      <h2>Planificá tu <em>viaje</em></h2>
+      <p>Elegí qué tramo caminar, compará dificultad y precios, y escogé el paquete y hospedaje que más te guste.</p>
+      <nav class="chapter__links" aria-label="Temas de Planificá tu viaje">
+        <a href="#secciones"><i class="ri-map-pin-line"></i> Secciones</a>
+        <a href="#comparativa"><i class="ri-table-line"></i> Comparativa</a>
+        <a href="#paquetes"><i class="ri-suitcase-3-line"></i> Paquetes</a>
+        <a href="#hospedaje"><i class="ri-hotel-bed-line"></i> Hospedaje</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== SECCIONES / TOURS ===== -->
+  <section class="section" id="secciones" aria-labelledby="secciones-title">
+    <div class="container center">
+      <span class="eyebrow">Tours de día en la Muralla</span>
+      <h2 class="title" id="secciones-title">Elegí tu <em>sección</em> de la Gran Muralla</h2>
+      <p class="lead">Cada tramo tiene su personalidad: desde el clásico y accesible Mutianyu hasta el salvaje Jiankou. Precios por persona con transporte privado desde Beijing, entrada, guía en español y almuerzo.</p>
+      <div class="filters" id="tour-filters" role="group" aria-label="Filtrar secciones">
+        <button class="filter-btn active" type="button" data-filter="todos">Todas</button>
+        <button class="filter-btn" type="button" data-filter="clasica">Clásicas</button>
+        <button class="filter-btn" type="button" data-filter="aventura">Aventura / Senderismo</button>
+        <button class="filter-btn" type="button" data-filter="foto">Fotografía y Noche</button>
+      </div>
+    </div>
+    <div class="container"><div class="tour-grid" id="tour-grid"></div></div>
+  </section>
+
+  <!-- ===== COMPARATIVA ===== -->
+  <section class="section section--white" id="comparativa" aria-labelledby="comparativa-title" style="padding-top:4rem">
+    <div class="container center">
+      <span class="eyebrow">Comparativa rápida</span>
+      <h2 class="title" id="comparativa-title">¿Cuál sección es <em>para vos</em>?</h2>
+      <p class="lead">Todas las secciones en una tabla: distancia desde Beijing, dificultad, ideal para quién y precio.</p>
+    </div>
+    <div class="container">
+      <div class="compare-wrap reveal">
+        <table class="compare">
+          <thead><tr><th>Sección</th><th>Tipo</th><th>Distancia</th><th>Duración</th><th>Dificultad</th><th>Ideal para</th><th>Precio / persona</th></tr></thead>
+          <tbody id="compare-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAQUETES ===== -->
+  <section class="section packages" id="paquetes" aria-labelledby="paquetes-title">
+    <div class="container center">
+      <span class="eyebrow">Paquetes todo incluido</span>
+      <h2 class="title" id="paquetes-title">Viaje completo <em>Honduras – Beijing</em></h2>
+      <p class="lead">Vuelo ida y vuelta, hospedaje, traslados, tours y asistencia 24/7. Precio por persona en habitación doble, en Lempiras.</p>
+    </div>
+    <div class="container"><div class="pkg-grid" id="pkg-grid"></div></div>
+  </section>
+
+  <!-- ===== HOSPEDAJE ===== -->
+  <section class="section" id="hospedaje" aria-labelledby="hospedaje-title">
+    <div class="container center">
+      <span class="eyebrow">Precios de estadía</span>
+      <h2 class="title" id="hospedaje-title">Dormí cerca de la <em>historia</em></h2>
+      <p class="lead">Precio por persona por noche en habitación doble, desayuno incluido. Niños menores de 12 años pagan el 50%.</p>
+    </div>
+    <div class="container"><div class="lodging-grid" id="lodging-grid"></div></div>
+  </section>
+
+  <!-- ######################################################################
+       CATEGORÍA 03 · RESERVÁ
+       ###################################################################### -->
+  <section class="section booking" id="reservar" aria-labelledby="reservar-title">
+    <div class="container">
+      <span class="eyebrow">03 · Reservá tu viaje</span>
+      <h2 class="title" id="reservar-title">Calculá el costo de tu viaje <em>al instante</em></h2>
+      <p class="lead">Elegí vuelo, sección de la Muralla, hospedaje y extras. Todos los montos están en Lempiras (L) e incluyen ISV.</p>
+
+      <div class="booking-grid">
+        <form class="form-card" id="booking-form" novalidate>
+          <fieldset>
+            <legend><i class="ri-user-3-line"></i> Tus datos</legend>
+            <div class="row">
+              <div class="field"><label for="nombre">Nombre completo *</label><input type="text" id="nombre" placeholder="Ej. María López" autocomplete="name" required /></div>
+              <div class="field"><label for="correo">Correo electrónico *</label><input type="email" id="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" required /></div>
+            </div>
+            <div class="row">
+              <div class="field"><label for="telefono">Teléfono / WhatsApp *</label><input type="tel" id="telefono" placeholder="+504 9999-9999" autocomplete="tel" required /></div>
+              <div class="field"><label for="origen">Ciudad de salida</label>
+                <select id="origen">
+                  <option value="Tegucigalpa (TGU – Palmerola XPL)">Tegucigalpa (Palmerola)</option>
+                  <option value="San Pedro Sula (SAP)">San Pedro Sula (SAP)</option>
+                  <option value="Roatán (RTB)">Roatán (RTB)</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><i class="ri-route-line"></i> Tu viaje</legend>
+            <div class="row">
+              <div class="field"><label for="tour">Sección de la Muralla *</label><select id="tour" required></select></div>
+              <div class="field"><label for="fecha">Fecha de salida *</label><input type="date" id="fecha" required /></div>
+            </div>
+            <div class="row-3">
+              <div class="field"><label for="noches">Noches en China</label><input type="number" id="noches" min="1" max="30" value="5" /></div>
+              <div class="field"><label for="adultos">Adultos</label><input type="number" id="adultos" min="1" max="20" value="2" /></div>
+              <div class="field"><label for="ninos">Niños (&lt;12)</label><input type="number" id="ninos" min="0" max="20" value="0" /></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><i class="ri-plane-line"></i> Vuelo ida y vuelta</legend>
+            <div class="opt-grid" id="flight-options"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend><i class="ri-hotel-bed-line"></i> Hospedaje</legend>
+            <div class="opt-grid" id="lodging-options"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend><i class="ri-sparkling-line"></i> Extras</legend>
+            <div class="opt-grid" id="extras-options"></div>
+            <div class="field" style="margin-top:1rem"><label for="comentarios">Comentarios o peticiones especiales</label><textarea id="comentarios" rows="3" placeholder="Celebraciones, alergias, accesibilidad..."></textarea></div>
+          </fieldset>
+
+          <p class="form-error" id="form-error" role="alert"></p>
+          <div class="form-actions">
+            <button type="button" class="btn btn--outline" id="preview-quote-btn"><i class="ri-file-list-3-line"></i> Ver mi cotización</button>
+            <button type="submit" class="btn"><i class="ri-send-plane-fill"></i> Confirmar solicitud de reserva</button>
+          </div>
+        </form>
+
+        <aside class="summary" aria-live="polite">
+          <div class="summary__img">
+            <img id="summary-img" src="https://sspark.genspark.ai/i/Mg7FuJroyK68XdHc?width=900" alt="Sección seleccionada de la Gran Muralla" />
+            <span id="summary-name">Mutianyu</span>
+          </div>
+          <div class="summary__body">
+            <h3>Resumen de costos</h3>
+            <ul class="summary__list" id="summary-list"></ul>
+            <div class="summary__total"><span>Total estimado</span><strong id="summary-total">L 0.00</strong></div>
+            <p class="summary__usd" id="summary-usd">≈ US$ 0</p>
+            <button type="button" class="btn btn--gold btn--full summary__quote" id="summary-quote-btn"><i class="ri-file-pdf-2-line"></i> Ver comprobante / PDF</button>
+            <p class="summary__note"><i class="ri-information-line"></i> Precios referenciales en Lempiras, sujetos a disponibilidad de vuelos. Incluye ISV 15% sobre servicios de agencia. Tasa referencial 1 USD = L 26.50.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONSULTAR RESERVA ===== -->
+  <section class="section" id="consultar" style="padding-bottom:2rem" aria-label="Consultar reserva">
+    <div class="container">
+      <div class="lookup reveal">
+        <div>
+          <h3><i class="ri-search-eye-line"></i> ¿Ya reservaste?</h3>
+          <p>Consultá tu solicitud con tu código (ej. CG-AB12CD). Se guarda en este dispositivo.</p>
+        </div>
+        <form id="lookup-form">
+          <input type="text" id="lookup-code" placeholder="Código de reserva" aria-label="Código de reserva" required />
+          <button class="btn" type="submit">Consultar</button>
+        </form>
+        <div class="lookup__result" id="lookup-result" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ######################################################################
+       CATEGORÍA 04 · AYUDA
+       ###################################################################### -->
+  <div class="chapter" style="background-image:url('https://sspark.genspark.ai/i/463jBFVaYod5UKWH?width=1600');margin-top:3.5rem">
+    <div class="container">
+      <span class="chapter__num"><b>04</b> Categoría</span>
+      <h2>Ayuda y <em>confianza</em></h2>
+      <p>Conocé quiénes somos, qué dicen los catrachos que ya viajaron y resolvé tus dudas.</p>
+      <nav class="chapter__links" aria-label="Temas de Ayuda">
+        <a href="#nosotros"><i class="ri-team-line"></i> Nosotros</a>
+        <a href="#testimonios"><i class="ri-chat-heart-line"></i> Testimonios</a>
+        <a href="#faq"><i class="ri-question-line"></i> Preguntas</a>
+        <a href="#contacto"><i class="ri-phone-line"></i> Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== POR QUÉ ===== -->
+  <section class="section section--white" id="nosotros" aria-labelledby="nosotros-title">
+    <div class="container why-grid">
+      <div class="why-img reveal">
+        <img src="https://sspark.genspark.ai/i/W2djfjj44glghY2q?width=1200" alt="Torres de la Gran Muralla en Mutianyu rodeadas de bosque" loading="lazy" />
+        <div class="floating"><i class="ri-user-heart-fill"></i><div><strong>+1,200 catrachos</strong><small>ya caminaron la Muralla con nosotros</small></div></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">¿Por qué CatrachoGo?</span>
+        <h2 class="title" id="nosotros-title">Una agencia hondureña que <em>te acompaña</em> hasta China</h2>
+        <p class="lead">Sabemos lo que significa cruzar medio mundo. Por eso nos encargamos de todo: desde la visa hasta el último escalón de la torre.</p>
+        <div class="why-list">
+          <div class="why-item"><i class="ri-passport-line"></i><div><h4>Asesoría de visa china</h4><p>Te guiamos con formularios, cita en la embajada y requisitos para hondureños.</p></div></div>
+          <div class="why-item"><i class="ri-wallet-3-line"></i><div><h4>Pagás en Lempiras</h4><p>Sin sorpresas por tipo de cambio. Aceptamos transferencia, tarjeta y hasta 6 cuotas.</p></div></div>
+          <div class="why-item"><i class="ri-customer-service-2-line"></i><div><h4>Guía en español y soporte 24/7</h4><p>Un guía local hispanohablante y un asesor catracho por WhatsApp durante todo el viaje.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="section" id="testimonios" aria-labelledby="testimonios-title">
+    <div class="container center">
+      <span class="eyebrow">Testimonios</span>
+      <h2 class="title" id="testimonios-title">Catrachos en la <em>Muralla</em></h2>
+    </div>
+    <div class="container"><div class="testi-track" id="testi-track"></div></div>
+  </section>
+
+  <!-- ===== FAQ por categorías ===== -->
+  <section class="section section--white" id="faq" aria-labelledby="faq-title">
+    <div class="container center">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 class="title" id="faq-title">Todo lo que necesitás <em>saber</em></h2>
+      <div class="faq-tabs" id="faq-tabs" role="group" aria-label="Filtrar preguntas">
+        <button class="filter-btn active" type="button" data-faq="todas">Todas</button>
+        <button class="filter-btn" type="button" data-faq="documentos">Visa y documentos</button>
+        <button class="filter-btn" type="button" data-faq="viaje">El viaje</button>
+        <button class="filter-btn" type="button" data-faq="muralla">En la Muralla</button>
+        <button class="filter-btn" type="button" data-faq="pagos">Pagos</button>
+      </div>
+    </div>
+    <div class="container faq" id="faq-list"></div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contacto">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo"><span class="logo__icon"><i class="ri-compass-3-fill"></i></span>Catracho<span>Go</span></a>
+        <p style="margin-top:1rem;font-size:.92rem">Agencia de turismo 100% hondureña. Este año te llevamos a uno de los destinos más impresionantes del planeta: la Gran Muralla China.</p>
+        <ul class="socials">
+          <li><a href="#contacto" aria-label="Facebook"><i class="ri-facebook-fill"></i></a></li>
+          <li><a href="#contacto" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+          <li><a href="#contacto" aria-label="TikTok"><i class="ri-tiktok-line"></i></a></li>
+          <li><a href="https://wa.me/50499990000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conocé la Muralla</h4>
+        <ul>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#construccion">Cómo se construyó</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Planificá y reservá</h4>
+        <ul>
+          <li><a href="#secciones">Secciones</a></li>
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#hospedaje">Hospedaje</a></li>
+          <li><a href="#reservar">Cotizador</a></li>
+          <li><a href="#consultar">Consultar reserva</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+50422223333"><i class="ri-phone-fill"></i> +504 2222-3333</a></li>
+          <li><a href="https://wa.me/50499990000" target="_blank" rel="noopener"><i class="ri-whatsapp-fill"></i> +504 9999-0000</a></li>
+          <li><a href="mailto:hola@catrachogo.hn"><i class="ri-mail-line"></i> hola@catrachogo.hn</a></li>
+          <li><span style="display:flex;gap:.5rem;align-items:center"><i class="ri-map-pin-2-fill"></i> Tegucigalpa, Honduras</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Boletín</h4>
+        <p style="font-size:.92rem">Recibí ofertas de vuelos a China y fechas de salidas grupales.</p>
+        <form class="newsletter" id="newsletter-form">
+          <input type="email" placeholder="Tu correo" aria-label="Tu correo" required />
+          <button class="btn btn--gold" type="submit" aria-label="Suscribirme"><i class="ri-send-plane-line"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bar">© 2026 CatrachoGo · Turismo responsable desde Honduras · Fotos y videos con fines ilustrativos, propiedad de sus autores.</div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="lb-btn lb-close" id="lb-close" type="button" aria-label="Cerrar"><i class="ri-close-line"></i></button>
+    <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Anterior"><i class="ri-arrow-left-s-line"></i></button>
+    <div><img id="lb-img" src="data:," alt="" /><p id="lb-cap"></p></div>
+    <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Siguiente"><i class="ri-arrow-right-s-line"></i></button>
+  </div>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal" id="confirm-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__box">
+      <span class="modal__icon"><i class="ri-checkbox-circle-fill"></i></span>
+      <h3 id="modal-title">¡Solicitud recibida!</h3>
+      <p id="modal-text"></p>
+      <div class="modal__code" id="modal-code"></div>
+      <div class="modal__btns">
+        <button class="btn btn--gold" id="modal-quote" type="button"><i class="ri-file-pdf-2-line"></i> Ver comprobante</button>
+        <button class="btn btn--outline" id="modal-close" type="button">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <button id="to-top" type="button" aria-label="Volver arriba"><i class="ri-arrow-up-line"></i></button>
+
+  <!-- Comprobante de cotización: visor, PDF, imprimir y WhatsApp -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/comprobante.js"></script>
+</body>
+</html>
